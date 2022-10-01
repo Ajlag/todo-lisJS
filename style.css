@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    purple,
+    rgb(147, 103, 103),
+    purple
+  );
+}
+.container {
+  width: 50vw;
+  min-height: 500px;
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 25%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px black, 0 0 25px purple, 0 0 5px darkblue;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+
+  box-shadow: 0px 0.5px 0px gray, 0 0 0px gray, 0 0 0px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header input {
+  width: 80%;
+  height: 40px;
+  border: 2px solid #aaa;
+  outline: none;
+  font-size: 20px;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  border-right: none;
+}
+
+.header input:focus {
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+#submit,
+.deleteBtn {
+  width: 30px;
+  height: 40px;
+  border: none;
+  font-size: 25px;
+  font-weight: 800;
+  background-color: white;
+  color: purple;
+  border: 2px solid #aaa;
+  border-left: none;
+}
+
+.deleteBtn {
+  margin-top: 5px;
+}
+#submit:hover,
+.deleteBtn:hover {
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.naslov {
+  width: 100%;
+  text-align: center;
+  color: purple;
+  font-size: 30px;
+  padding: 5px;
+  border-bottom: 1px solid #aaa;
+}
+#list {
+  width: 100%;
+  list-style-type: none;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.group {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.item {
+  width: 80%;
+  height: 40px;
+  border: 1px solid #aaa;
+  font-size: 25px;
+  padding: 5px;
+  margin-top: 5px;
+  background-color: white;
+}
+
+.item:hover {
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+}
+/* 
+.deleteBtn {
+  width: 50px;
+  height: 40px;
+  background-color: blue;
+  border: none;
+} */
