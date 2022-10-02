@@ -14,10 +14,17 @@ button.addEventListener("click", () => {
   deleteButt = document.createElement("button");
   deleteButt.className = "deleteBtn";
 
+  checkBtn = document.createElement("button");
+  checkBtn.className = "checkBtn";
   i = document.createElement("i");
+  ic = document.createElement("i");
+
+  ic.className = "fa-solid fa-check";
   i.className = "fas fa-trash";
   deleteButt.appendChild(i);
+  checkBtn.appendChild(ic);
   divGroup.appendChild(li);
+  divGroup.appendChild(checkBtn);
   divGroup.appendChild(deleteButt);
   input.value = "";
 
@@ -26,5 +33,13 @@ button.addEventListener("click", () => {
     const todo = item.parentElement;
     const brisi = todo.parentElement;
     brisi.remove();
+  });
+
+  checkBtn.addEventListener("click", (e) => {
+    const item = e.target;
+    const todo = item.parentElement;
+    const precrtaj = todo.parentElement;
+    precrtaj.style.textDecoration = "line-through";
+    precrtaj.style.color = "gray";
   });
 });

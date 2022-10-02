@@ -54,10 +54,10 @@ body {
 }
 
 #submit,
-.deleteBtn {
+.deleteBtn,
+.checkBtn {
   width: 30px;
   height: 40px;
-  border: none;
   font-size: 25px;
   font-weight: 800;
   background-color: white;
@@ -66,11 +66,17 @@ body {
   border-left: none;
 }
 
-.deleteBtn {
+.deleteBtn,
+.checkBtn {
   margin-top: 5px;
 }
+
+.checkBtn {
+  border-right: none;
+}
 #submit:hover,
-.deleteBtn:hover {
+.deleteBtn:hover,
+.checkBtn:hover {
   border-color: dodgerblue;
   box-shadow: 0 0 8px 0 dodgerblue;
 }
@@ -102,11 +108,12 @@ body {
 .item {
   width: 80%;
   height: 40px;
-  border: 1px solid #aaa;
+  border: 2px solid #aaa;
   font-size: 25px;
   padding: 5px;
   margin-top: 5px;
   background-color: white;
+  border-right: none;
 }
 
 .item:hover {
